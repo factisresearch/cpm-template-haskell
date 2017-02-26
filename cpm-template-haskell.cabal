@@ -1,0 +1,23 @@
+name:                cpm-template-haskell
+version:             0.1.0.0
+synopsis:            Patched template-haskell code for the checkpad project
+homepage:            https://github.com/factisresearch/cpm-template-haskell
+license:             BSD3
+license-file:        LICENSE
+author:              Stefan Wehr
+maintainer:          wehr@cp-med.com
+copyright:           2017 factis research
+category:            Misc
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.SafeCopy.Cpm, Data.Aeson.Cpm, Control.Lens.Cpm
+  build-depends:       base, cereal, safecopy, template-haskell, lens, aeson
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/factisresearch/cpm-template-haskell
